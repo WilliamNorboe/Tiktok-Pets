@@ -1,0 +1,52 @@
+.winnerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+	width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.videoNickname{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: inter, sans-serif;
+}
+
+.reload{
+	margin-top: 50px;
+	transform: scaleX(-1) rotate(314deg);
+}
+
+@media screen and (max-width:600px) {
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:700px){
+	.videoNickname{
+		font-size: 18px;
+	}
+}

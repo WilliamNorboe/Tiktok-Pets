@@ -1,0 +1,120 @@
+
+body{
+	width: 100%;
+}
+.gameHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+	width: 90%;
+}
+main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.videoContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reload,.heart {
+  margin: 20px;
+}
+
+.reload{
+	transform: scaleX(-1) rotate(314deg);
+}
+
+.unloved {
+  color: rgb(180,180,180);
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+#fasr{
+	color: rgb(180,180,180);
+	display: inline;
+}
+
+#far2{
+	color: rgb(180,180,180);
+	display: inline;
+}
+
+#fas1{
+	display: none;
+}
+#fas2{
+	display: none;
+}
+
+.videoNickname{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: inter, sans-serif;
+}
+
+@media screen and (max-width:750px) {
+
+  main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+
+  footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  
+}
+
+@media screen and (max-width:700px){
+	.videoNickname{
+		font-size: 18px;
+	}
+
+	#next{
+		font-size: 16px;
+	}
+}
