@@ -42,6 +42,23 @@ async function initTables () {
   }
 }
 
+db.initTables = async () => {
+  
+  let result1 =  await checkIfThere("VideoTable");
+  if (!result1) {
+    console.log("Creating video table");
+    await createVideoTable();
+  }
+
+  let result2 = await checkIfThere("PrefTable");
+  if (!result2) {
+    console.log("Creating preferences table");
+    await createPrefTable();
+  } else {
+    // clean out any old data
+    await deleteEverythingPrefs();
+  }
+}
 
 async function checkIfThere(table) {
 console.log("checking for",table);
@@ -83,4 +100,6 @@ async function deleteEverythingPrefs () {
 }
 
 // allow code in other server .js files to use the db object
+
 module.exports = db;
+
