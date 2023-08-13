@@ -40,6 +40,7 @@ app.use(express.static("public"));
 
 // if no file specified, return the main page
 app.get("/", (request, response) => {
+  db.initTables();
   response.sendFile(__dirname + "/public/compare.html");
 });
 
