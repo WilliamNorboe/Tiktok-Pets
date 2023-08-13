@@ -60,6 +60,7 @@ app.get("/getWinner", async function(req, res) {
   // you'll need to send back a more meaningful response here.
   // res.json({});
 		//dumpTable()
+    db.initTables();
 		getVideoById(winner)
 			.then(function(result){
 					console.log(result);
